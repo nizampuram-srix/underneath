@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex" />
+    <meta name="theme-color" content="#F3EFE6" />
+    <title>404 &middot; UNDERNEATH</title>
+    <link rel="icon" type="image/svg+xml" href="/underneath/favicon.svg" />
+    <style>
+      :root { --paper: #F3EFE6; --ink: #121212; --accent: #FF4D00; --muted: #5A564D; }
+      * { box-sizing: border-box; }
+      html, body { height: 100%; margin: 0; }
+      body {
+        background-color: var(--paper);
+        background-image: repeating-linear-gradient(
+          90deg, rgba(18, 18, 18, 0.04) 0, rgba(18, 18, 18, 0.04) 1px, transparent 1px, transparent 96px);
+        color: var(--ink);
+        font-family: Inter, system-ui, -apple-system, "Segoe UI", sans-serif;
+        display: grid;
+        place-items: center;
+        padding: 24px;
+      }
+      main { width: 100%; max-width: 760px; border-top: 1px solid var(--ink); padding-top: 24px; }
+      .label {
+        font-family: ui-monospace, "JetBrains Mono", Consolas, monospace;
+        font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); margin: 0 0 24px;
+      }
+      h1 {
+        font-family: "Instrument Serif", Georgia, "Times New Roman", serif;
+        font-weight: 400; font-size: clamp(48px, 11vw, 120px); line-height: 0.95; margin: 0 0 24px;
+      }
+      .dot { display: inline-block; width: 0.14em; height: 0.14em; background: var(--accent); border-radius: 50%; margin-left: 0.06em; }
+      p { font-size: 18px; line-height: 1.55; max-width: 34em; margin: 0 0 28px; }
+      .links { display: flex; flex-wrap: wrap; gap: 12px 28px; }
+      a { color: var(--ink); text-decoration: underline; text-underline-offset: 4px; padding: 8px 0; min-height: 44px; }
+      a:hover { text-decoration-color: var(--accent); text-decoration-thickness: 2px; }
+      a:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+      @media (prefers-contrast: more) { body { background-image: none; } .label { color: var(--ink); } }
+    </style>
+  </head>
+  <body>
+    <main>
+      <p class="label">&sect; 404 &mdash; Not found</p>
+      <h1>This layer does not exist<span class="dot"></span></h1>
+      <p>There is nothing at this address. Go back to the surface and look again.</p>
+      <div class="links">
+        <a href="/underneath/">Back to the surface</a>
+        <a href="https://nizampuram-srix.github.io/">Choose another site</a>
+      </div>
+    </main>
+  </body>
+</html>
